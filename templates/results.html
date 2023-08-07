@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Data Quality Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Data Quality Results</h5>
+                    </div>
+                    <div class="card-body">
+                        {% if not results %}
+                        <p>No data quality results available.</p>
+                        {% else %}
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Column</th>
+                                        <th>Missing Values</th>
+                                        <th>Duplicates</th>
+                                        <th>High Cardinality</th>
+                                        <th>Low Cardinality</th>
+                                        <th>Consistency Issues</th>
+                                        <th>Accuracy Count</th>
+                                        <th>Accuracy Percentage</th>
+                                        <th>Validity Count</th>
+                                        <th>Validity Percentage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for column, result in results.items() %}
+                                    <tr>
+                                        <td>{{ column }}</td>
+                                        <td>{{ result['Missing Values'] }}</td>
+                                        <td>{{ result['Duplicates'] }}</td>
+                                        <td>{% if result['High Cardinality'] %}Yes{% else %}No{% endif %}</td>
+                                        <td>{% if result['Low Cardinality'] %}Yes{% else %}No{% endif %}</td>
+                                        <td>{{ result['Consistency Issues'] }}</td>
+                                        <td>{{ result['Accuracy Count'] }}</td>
+                                        <td>{{ result['Accuracy Percentage']|round(2) }}%</td>
+                                        <td>{{ result['Validity Count'] }}</td>
+                                        <td>{{ result['Validity Percentage']|round(2) }}%</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        {% endif %}
+                        <a href="/" class="btn btn-secondary mt-3">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
