@@ -15,7 +15,7 @@ COPY . /app
 RUN apt update && apt install -y python3.8-dev
 
 # Install the latest version of `pip` to avoid compatibility issues
-RUN python -m pip install --upgrade pip
+RUN -m python pip install --upgrade pip
 
 # Install the application dependencies using pip3
 # Removed the "pip3 install" command and replaced it with "pip install"
