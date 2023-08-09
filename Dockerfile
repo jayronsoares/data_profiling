@@ -19,7 +19,7 @@ RUN python -m pip install --upgrade pip
 
 # Install the application dependencies using pip3
 # Removed the "pip3 install" command and replaced it with "pip install"
-# Also added the-- `no-cache-dir` flag to avoid caching issues
+# Also added the `--no-cache-dir` flag to avoid caching issues
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Define the entry point for the container
