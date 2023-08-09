@@ -15,11 +15,11 @@ COPY . /app
 RUN apt update && apt install -y python3.8-dev
 
 # Install the latest version of `pip` to avoid compatibility issues
-RUN -m python pip install --upgrade pip
+RUN python -m pip install --upgrade pip
 
 # Install the application dependencies using pip3
 # Removed the "pip3 install" command and replaced it with "pip install"
-# Also added the `--no-cache-dir` flag to avoid caching issues
+# Also added the-- `no-cache-dir` flag to avoid caching issues
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Define the entry point for the container
