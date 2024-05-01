@@ -1,5 +1,5 @@
 # Data Profiling
-## Data profiling is a crucial practice in data analytics that involves systematically examining and understanding the contents, structure, and quality of a dataset. As a data analyst, you can think of data profiling as a detective-like process where you dive deep into the data to reveal its hidden secrets and gain valuable insights.
+## Data profiling is a crucial practice in data analytics that involves systematically examining and understanding the contents, structure, and quality of a dataset.
 
 What is Data Profiling?
 Data profiling is the process of thoroughly inspecting data to obtain a holistic picture of its characteristics. It goes beyond just looking at the numbers; it involves understanding the meaning and context behind the data. By summarizing statistics, assessing data quality, identifying patterns, and detecting anomalies, data profiling paints a comprehensive portrait of the dataset.
