@@ -1,10 +1,7 @@
-# Data Profiling
-## Data profiling is a crucial practice in data analytics that involves systematically examining and understanding the contents, structure, and quality of a dataset.
+### <p>What is Data Profiling?</p>
+<p>Data profiling is the process of thoroughly inspecting data to obtain a holistic picture of its characteristics. It goes beyond just looking at the numbers; it involves understanding the meaning and context behind the data. By summarizing statistics, assessing data quality, identifying patterns, and detecting anomalies, data profiling paints a comprehensive portrait of the dataset.</p>
 
-What is Data Profiling?
-Data profiling is the process of thoroughly inspecting data to obtain a holistic picture of its characteristics. It goes beyond just looking at the numbers; it involves understanding the meaning and context behind the data. By summarizing statistics, assessing data quality, identifying patterns, and detecting anomalies, data profiling paints a comprehensive portrait of the dataset.
-
-How is Data Profiling Performed?
+### How is Data Profiling Performed?
 Data profiling involves several key steps:
 1. Summary Statistics: It provides an overview of the data, including minimum, maximum, average, and other statistical measures for each column. This step helps you understand the range and distribution of the data.
 
@@ -16,7 +13,7 @@ Data profiling involves several key steps:
 
 5. Data Patterns and Anomalies: Data profiling unveils meaningful patterns and unusual observations, which help you detect trends and irregularities in the data.
 
-When is Data Profiling Useful?
+### When is Data Profiling Useful?
 Data profiling is valuable at various stages of a data analytics project:
 1. At the start of a project, data profiling provides a comprehensive understanding of the dataset. It informs crucial decisions about data modeling, visualization, and analysis strategies.
 
@@ -26,7 +23,7 @@ Data profiling is valuable at various stages of a data analytics project:
 
 4. Before conducting any analysis, data profiling helps assess the risks associated with using the data. It ensures that your analysis is based on trustworthy and accurate information.
 
-Why is Data Profiling Important?
+### Why is Data Profiling Important?
 Data profiling is the backbone of successful data analytics projects for several reasons:
 1. It ensures that you are working with high-quality data, leading to reliable and credible analysis results.
 
