@@ -35,5 +35,3 @@ Data profiling is the backbone of successful data analytics projects for several
 3. By identifying data issues early on, data profiling saves time and resources by streamlining the data cleaning process.
 
 4. The insights gained from data profiling provide valuable context for interpreting analysis results and conveying meaningful conclusions to stakeholders.
-
-In summary, data profiling is a detective-like exploration of data that equips you with the knowledge needed to make informed decisions, clean and prepare data effectively, and ultimately, uncover valuable insights for successful data analytics projects. As a data analyst, mastering data profiling will elevate your skills and bring you closer to the heart of data-driven decision-making.
